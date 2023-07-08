@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+:root{
+    --main-bg-color: darkgreen;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.progressbar{
+   background-color: aqua;
+   height: 3px;
+   animation: progress 1s ease-in 1;
+}
+@keyframes progress {
+    0%{
+        width: 0vw;
+    }
+    30%{
+        width: 50vw;
+    }
+    50%{
+        width: 90vw;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+header {
+    background: var(--main-bg-color);
+    border: 2px solid black;
+}
+
+nav {
+    display: flex;
+}
+.logo1{
+    display: flex;
+    
+}
+.logo1 img{
+    width: 60px;
+
+}
+
+nav ul {
+    display: flex;
+    height: 9vh;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 25px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Alkatra', cursive;
+}
+.header1{
+    height: 9vh;
+}
+.headanimate{
+    padding: 20px 5px;
+    height: 9vh;
+    /* background-color: lightgray; */
+    color: black;
+    text-shadow: 1px 1px 0px rgb(255, 255, 255);
+    /* text-transform: capitalize; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic; 
+    font-weight: bold;
+    
+    
+    display: flex;
+    position: absolute;
+    top: 4px;
+    animation-name: headanimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.header1 img{
+    width: 320px;
+    height: 9vh;
+    display: flex;
+    position: absolute;
+    top: 4px;
+    animation-name: headanimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes headanimation{
+    from{ left: 35vw;}
+    to{left: 55vw;}
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    
+}
+.searchbar input{
+    width: 175px;
+    color: black;
+    height: 18px;
+}
+.button1{
+    margin: 0px 2px;
+    background-color: white;
+    color: black;
+}
+main{
+    height: 82vh;
+    background-color: brown;
+}
+.main1-1{
+    max-height: 82vh;
+    height: 60vh;
+    width: 76vw;
+}
+.main1-2{
+    position: fixed;
+    top: 453px;
+    left: 0px;
+    width:19vw;
+    height: 22vh;
+}
+.main1-3{
+    position: fixed;
+    top: 453px;
+    left: 19vw;
+    width:19vw;
+    height: 22vh;
+}
+.main1-4{
+    position: fixed;
+    top: 453px;
+    left: 38vw;
+    width:19vw;
+    height: 22vh;
+}
+.main1-5{
+    position: fixed;
+    top: 453px;
+    left: 57vw;
+    width:19vw;
+    height: 22vh;
+}
+footer{
+    height: 9vh;
+    background-color: var(--main-bg-color);
+  color: white;
+  font-family: 'Alkatra', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
